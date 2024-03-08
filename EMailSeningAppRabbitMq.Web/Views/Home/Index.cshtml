@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model MailMessageClient
+<form   asp-controller="Home" asp-action="Index" method="post">
+  
+   
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Example textarea</label>
+        <textarea asp-for="MessageContent" class="form-control"  rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">gonder</button>
+</form>
